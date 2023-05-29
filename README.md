@@ -77,5 +77,5 @@ This project *does **NOT** redistribute the Minecraft server files*. Instead, th
 **PLEASE NOTE:** This is an unofficial project. I did not create PaperMC. [This is the official PaperMC website.](https://papermc.io/)
 
 ## Project Pages
-- [GitHub page](https://github.com/Phyremaster/papermc-docker).
-- [Docker Hub page](https://hub.docker.com/r/phyremaster/papermc).
+- [GitHub page](https://github.com/dcorbe/papermc-docker).
+- [Docker Hub page](https://hub.docker.com/r/dcorbe/papermc).

@@ -10,6 +10,10 @@ This image provides a basic PaperMC server. All customizations are left to the u
   * [Command](#command)
   * [Options](#options)
     * [Environment Variables](#environment-variables)
+  * [How do I...](#how-do-i)
+    * [Expose ports for...](#expose-ports-for)
+      * [GeyserMC (bedrock clients)](#geysermc-bedrock-clients)
+      * [Dynamap/Bluemap/Squaremap/etc](#dynamapbluemapsquaremapetc)
   * [Further Setup](#further-setup)
 * [Technical](#technical)
   * [Project Pages](#project-pages)
@@ -81,6 +85,20 @@ Environment variables are options that are specified in the format `-e <NAME>="<
   - Set to any additional Java command line options that you would like to include.
   - By default, this environment variable is set to the empty string.
   - `-e JAVA_OPTS="<-XX:+UseConcMarkSweepGC -XX:+UseParNewGC>"`
+
+## How do I...
+
+### Expose ports for...
+
+#### GeyserMC (bedrock clients)
+- Download [Geyser-Spigot](https://geysermc.org/download) and place it into your `papermc/plugins` folder
+- Add `-p 19132:19132` and `-p 19133:19133` to your `docker run` command line arguments.
+
+#### Dynamap/Bluemap/Squaremap/etc
+- Dynamap: Add `-p 8123:8123` to your `docker run` command line arguments.
+- Bluemap: Add `-p 8100:8100` to your `docker run` command line arguments.
+- Squaremap: Add `-p 8080:8080` to your `docker run` command line arguments.
+
 ## Further Setup
 From this point, the server should be configured in the same way as any other Minecraft server. The server's files, including `server.properties`, can be found in the volume that was specified earlier. The port that was specified earlier will probably need to be forwarded as well. For details on how to do this and other such configuration, Google it, because it works the same as any other Minecraft server.
 # Technical

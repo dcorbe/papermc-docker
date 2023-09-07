@@ -11,6 +11,8 @@ This image provides a basic PaperMC server. All customizations are left to the u
   * [Options](#options)
     * [Environment Variables](#environment-variables)
   * [How do I...](#how-do-i)
+    * [Install a specific version of Minecraft](#install-a-specific-version-of-minecraft)
+    * [Install a specific version of PaperMC](#install-a-specific-version-of-papermc)
     * [Expose ports for...](#expose-ports-for)
       * [GeyserMC (bedrock clients)](#geysermc-bedrock-clients)
       * [Dynamap/Bluemap/Squaremap/etc](#dynamapbluemapsquaremapetc)
@@ -87,6 +89,14 @@ Environment variables are options that are specified in the format `-e <NAME>="<
   - `-e JAVA_OPTS="<-XX:+UseConcMarkSweepGC -XX:+UseParNewGC>"`
 
 ## How do I...
+
+### Install a specific version of Minecraft
+- Add `-e MC_VERSION=1.20.1` (or your desired version) to your `docker run` command line arguments
+- If you're going to specify a minecraft version, you MUST also specify a paper build.
+
+### Install a specific version of PaperMC
+- Add `-e PAPER_BUILD=171` (or your desired version) to your `docker run` command line arguments
+- If you're goign to specify a paper build, you MUST also specify a minecraft version.
 
 ### Expose ports for...
 
